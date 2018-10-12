@@ -20,7 +20,7 @@ vector<Airports> FileHandler::getAirports()
 
 void FileHandler::importMainFile()
 {
-	ifstream file("../Debug/BookingFile.txt");
+	ifstream file("../BookingFile.txt");
 	string line = "";
 	vector<string> fileContents;
 	
@@ -91,6 +91,7 @@ string FileHandler::sanitizeString(string line)
 
 FileHandler::~FileHandler()
 {
+	airports.~vector();
 }
 
 //vector<Airports> airports;
