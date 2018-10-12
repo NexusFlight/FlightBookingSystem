@@ -1,0 +1,110 @@
+[Airport Name]
+Amsterdam
+[Flight Details]
+111
+12/12/18
+18.00
+19.00
+Amsterdam
+Edinburgh
+NA
+50
+2
+	[Plane Details]
+	Turbo Prop
+	QuinJet
+	441
+	M3KSA
+	52
+	[Reservation Details]
+	10/10/18
+	[Customer Details]
+	001
+	Andrew
+	Blah ah B90 3NW
+	+447722537009
+	[Reservation Details]
+	10/10/17
+	[Customer Details]
+	003
+	Andrew
+	Blah ah B90 3NW
+	+447722537009
+[Flight Details]
+112
+12/12/18
+19.00
+20.00
+Amsterdam
+Edinburgh
+NA
+48
+4
+	[Plane Details]
+	Turbo Prop
+	QuinJet
+	442
+	M3KSA
+	52
+	[Reservation Details]
+	10/10/18
+	[Customer Details]
+	001
+	Andrew
+	Blah ah B90 3NW
+	+447722537009
+[Airport Name]
+Edinburgh
+[Flight Details]
+111
+12/12/18
+18.00
+19.00
+Amsterdam
+Edinburgh
+NA
+50
+2
+	[Plane Details]
+	Turbo Prop
+	QuinJet
+	441
+	M3KSA
+	52
+	[Reservation Details]
+	10/10/18
+	[Customer Details]
+	001
+	Andrew
+	Blah ah B90 3NW
+	+447722537009
+	[Reservation Details]
+	10/10/17
+	[Customer Details]
+	003
+	Andrew
+	Blah ah B90 3NW
+	+447722537009
+[Flight Details]
+112
+12/12/18
+19.00
+20.00
+Amsterdam
+Edinburgh
+NA
+48
+4
+	[Plane Details]
+	Turbo Prop
+	QuinJet
+	442
+	M3KSA
+	52
+	[Reservation Details]
+	10/10/18
+	[Customer Details]
+	001
+	Andrew
+	Blah ah B90 3NW
+	+447722537009
