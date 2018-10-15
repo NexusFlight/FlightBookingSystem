@@ -15,6 +15,8 @@ public:
 	Reservations();
 	Reservations(int flightCode, string dateOfBooking, string dateOfDeparture);
 	void assignCustomer(int customerCode, string customerName, string customerAddress, string customerPhone);
+	Customers * getCustomer();
+	string toString();
 	~Reservations();
 };
 

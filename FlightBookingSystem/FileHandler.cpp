@@ -15,7 +15,59 @@ FileHandler::FileHandler()
 
 vector<Airports> FileHandler::getAirports()
 {
-	return airports;
+	return _airports;
+}
+
+void FileHandler::writeToFile(vector<Airports> airports)
+{
+	ofstream file("../BookingFile.txt");
+	for  (int i = 0;  i < airports.size();  i++)
+	{
+		file << "[Airport Name]";
+		file << '\n';
+		file << airports[i].getName();
+		file << '\n';
+		vector<Flights> flights = airports[i].getFlights();
+		for (int j = 0; j < flights.size(); j++)
+		{
+			vector<string> flightDetails = flights[j].toString();
+			file << "[Flight Details]";
+			file << '\n';
+			for (int k = 0; k < flightDetails.size(); k++)
+			{
+				file << flightDetails[k];
+				file << '\n';
+			}
+			file << "\t[Plane Details]";
+			file << '\n';
+			vector<string> planeDetails = flights[j].getPlane()->toString();
+			for (int k = 0; k < planeDetails.size(); k++)
+			{
+				file << '\t'+planeDetails[k];
+				file << '\n';
+			}
+			vector<Reservations> reservations = flights[j].getReservations();
+			for (int k = 0; k < reservations.size(); k++)
+			{
+				string reservationDetails = reservations[k].toString();
+				vector<string> customerDetails = reservations[k].getCustomer()->toString();
+				file << "\t[Reservation Details]";
+				file << '\n';
+				file << '\t'+reservationDetails;
+				file << '\n';
+				file << "\t[Customer Details]";
+				file << '\n';
+				for (int l = 0; l < customerDetails.size(); l++)
+				{
+					file << '\t'+customerDetails[l];
+					file << '\n';
+				}
+				
+			}
+		}
+	}
+
+
 }
 
 void FileHandler::importMainFile()
@@ -59,26 +111,26 @@ void FileHandler::importMainFile()
 
 void FileHandler::generateAirports(string line)
 {
-	airports.push_back(Airports(line));
+	_airports.push_back(Airports(line));
 }
 
 void FileHandler::assignFlightToAirport(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable) {
-	airports[airports.size()-1].addFlight(flightCode, dateOfDeparture, expcTimeOfDepart, expectTimeofArrival, departureAirport, destinationAirport, connections, seatsBooked, seatsAvailable);
+	_airports[_airports.size()-1].addFlight(flightCode, dateOfDeparture, expcTimeOfDepart, expectTimeofArrival, departureAirport, destinationAirport, connections, seatsBooked, seatsAvailable);
 }
 
 void FileHandler::assignPlaneToFlight(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats)
 {
-	airports[airports.size() - 1].addPlaneToFlight(planeType, planeMake, planeModel, planeCallSign, totalSeats);
+	_airports[_airports.size() - 1].addPlaneToFlight(planeType, planeMake, planeModel, planeCallSign, totalSeats);
 }
 
 void FileHandler::assignReservationToFlight(string dateOfBooking)
 {
-	airports[airports.size() - 1].assignReservationToFlight(dateOfBooking);
+	_airports[_airports.size() - 1].assignReservationToFlight(dateOfBooking);
 }
 
 void FileHandler::assignCustomerToReservation(int customerCode,string customerName,string customerAddress,string customerPhone)
 {
-	airports[airports.size() - 1].assignCustomerToReservation(customerCode, customerName, customerAddress, customerPhone);
+	_airports[_airports.size() - 1].assignCustomerToReservation(customerCode, customerName, customerAddress, customerPhone);
 }
 
 
@@ -91,7 +143,7 @@ string FileHandler::sanitizeString(string line)
 
 FileHandler::~FileHandler()
 {
-	airports.~vector();
+	_airports.~vector();
 }
 
 //vector<Airports> airports;

@@ -2,10 +2,11 @@
 #include <string>
 #include <fstream>
 #include "Airports.h"
+#include "Planes.h"
 using namespace std;
 class FileHandler
 {
-	vector<Airports> airports;
+	vector<Airports> _airports;
 	void importMainFile();
 	void extractInformation(string fileContent, int fileLength);
 	void generateAirports(string line);
@@ -17,6 +18,7 @@ class FileHandler
 public:
 	FileHandler();
 	vector<Airports> getAirports();
+	void writeToFile(vector<Airports> airports);
 	~FileHandler();
 };
 

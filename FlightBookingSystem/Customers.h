@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
 using namespace std;
 class Customers
 {
@@ -10,6 +11,7 @@ class Customers
 public:
 	Customers();
 	Customers(int customerCode, string customerName, string customerAddress, string customerPhone);
+	vector<string> toString();
 	~Customers();
 };
 

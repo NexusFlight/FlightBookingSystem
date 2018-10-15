@@ -14,6 +14,16 @@ void Reservations::assignCustomer(int customerCode, string customerName, string 
 	customer = new Customers(customerCode, customerName, customerAddress, customerPhone);
 }
 
+Customers* Reservations::getCustomer()
+{
+	return customer;
+}
+
+string Reservations::toString()
+{
+	return _dateOfBooking;
+}
+
 Reservations::~Reservations()
 {
 }

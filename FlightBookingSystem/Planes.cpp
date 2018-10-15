@@ -11,6 +11,17 @@ Planes::Planes(string planeType, string planeMake, string planeModel, string pla
 	_totalSeats = totalSeats;
 }
 
+vector<string> Planes::toString()
+{
+	vector<string> value;
+	value.push_back(_planeType);
+	value.push_back(_planeMake);
+	value.push_back(_planeModel);
+	value.push_back(_planeCallSign);
+	value.push_back(to_string(_totalSeats));
+	return value;
+}
+
 
 Planes::~Planes()
 {

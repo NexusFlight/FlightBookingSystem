@@ -9,7 +9,7 @@ class Flights
 {
 	int _flightCode;
 	string _dateOfDeparture;
-	float _expcTimeOfDepart;
+	float _expectTimeOfDepart;
 	float _expectTimeofArrival;
 	string _departureAirport;
 	string _destinationAirport;
@@ -17,7 +17,7 @@ class Flights
 	int _seatsBooked;
 	int _seatsAvailable;
 	Planes *plane;
-	vector<Reservations> reservations;
+	vector<Reservations> _reservations;
 
 public:
 	Flights();
@@ -26,5 +26,17 @@ public:
 	void assignReservation(string dateOfBooking);
 	void assignCustomerToReservation(int customerCode, string customerName, string customerAddress, string customerPhone);
 	~Flights();
+	vector<string> toString();
+	//int getFlightCode();
+	//string getDateOfDepature();
+	//float getExpectTimeOfDepart();
+	//float getExpectTimeOfArrival();
+	//string getDepatureAirport();
+	//string getDesinationAirport();
+	//string getConnections();
+	//int getSeatsBooked();
+	//int getSeatsAvailable();
+	Planes* getPlane();
+	vector<Reservations> getReservations();
 };
 
