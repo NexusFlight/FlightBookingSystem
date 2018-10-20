@@ -1,0 +1,25 @@
+[Customer Details]
+CustomerCode:1
+CustomerName:Andrew
+CustomerAddress:Blah ah B90 3NW
+CustomerPhoneNum:+447722537009
+[Customer Details]
+CustomerCode:2
+CustomerName:Tom
+CustomerAddress:shangrila 
+CustomerPhoneNum:+447722547009
+[Customer Details]
+CustomerCode:3
+CustomerName:Bob
+CustomerAddress:Tongfu
+CustomerPhoneNum:+447422537009
+[Customer Details]
+CustomerCode:4
+CustomerName:Floto
+CustomerAddress:Behng
+CustomerPhoneNum:+443322537009
+[Customer Details]
+CustomerCode:5
+CustomerName:Shingo
+CustomerAddress:Belami
+CustomerPhoneNum:+447722337009

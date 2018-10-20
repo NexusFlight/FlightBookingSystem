@@ -73,11 +73,7 @@ NA
 	52
 	[Reservation Details]
 	10/10/18
-	[Customer Details]
-	1
-	Andrew
-	Blah ah B90 3NW
-	+447722537009
+
 	[Reservation Details]
 	10/10/17
 	[Customer Details]

@@ -6,7 +6,8 @@
 #include <algorithm>
 
 using namespace std;
-
+//ToDo: Multi File structure Derived file handlers
+//Command pattern?
 
 FileHandler::FileHandler()
 {

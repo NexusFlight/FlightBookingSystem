@@ -39,6 +39,12 @@
     <ClInclude Include="Airports.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FileHandlerC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHandlerD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -63,6 +69,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Airports.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandlerC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandlerD.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

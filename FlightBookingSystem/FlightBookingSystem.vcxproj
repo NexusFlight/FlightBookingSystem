@@ -149,7 +149,9 @@
   <ItemGroup>
     <ClInclude Include="Airports.h" />
     <ClInclude Include="Customers.h" />
+    <ClInclude Include="FileHandlerD.h" />
     <ClInclude Include="FileHandler.h" />
+    <ClInclude Include="FileHandlerC.h" />
     <ClInclude Include="Flights.h" />
     <ClInclude Include="Planes.h" />
     <ClInclude Include="Reservations.h" />
@@ -159,7 +161,9 @@
   <ItemGroup>
     <ClCompile Include="Airports.cpp" />
     <ClCompile Include="Customers.cpp" />
+    <ClCompile Include="FileHandlerD.cpp" />
     <ClCompile Include="FileHandler.cpp" />
+    <ClCompile Include="FileHandlerC.cpp" />
     <ClCompile Include="FlightBookingSystem.cpp" />
     <ClCompile Include="Flights.cpp" />
     <ClCompile Include="Planes.cpp" />
