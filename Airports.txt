@@ -1,0 +1,4 @@
+[Airport Details]
+AirportName:Amsterdam
+[Airport Details]
+AirportName:Edinburgh

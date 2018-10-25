@@ -45,6 +45,12 @@
     <ClInclude Include="FileHandlerD.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FileHandlerA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHandlerF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -75,6 +81,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FileHandlerD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandlerA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandlerF.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
