@@ -1,0 +1,20 @@
+[Reservation Details]
+FlightCode:111
+DateOfBooking:10/10/18
+DateOfTravel:12/12/18
+[Reservation Details]
+FlightCode:112
+DateOfBooking:11/10/18
+DateOfTravel:12/12/18
+[Reservation Details]
+FlightCode:112
+DateOfBooking:09/09/18
+DateOfTravel:12/12/18
+[Reservation Details]
+FlightCode:113
+DateOfBooking:05/04/18
+DateOfTravel:12/12/18
+[Reservation Details]
+FlightCode:113
+DateOfBooking:01/07/18
+DateOfTravel:12/12/18

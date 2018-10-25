@@ -1,22 +1,22 @@
 #pragma once
 #include <string>
 #include <vector>
-#include "Customers.h"
+#include "Customer.h"
 
 using namespace std;
 
-class Reservations
+class Reservation
 {
 	int _flightCode;
 	string _dateOfBooking;
 	string _dateOfDeparture;
-	Customers *customer;
+	Customer *customer;
 public:
-	Reservations();
-	Reservations(int flightCode, string dateOfBooking, string dateOfDeparture);
+	Reservation();
+	Reservation(int flightCode, string dateOfBooking, string dateOfDeparture);
 	void assignCustomer(int customerCode, string customerName, string customerAddress, string customerPhone);
-	Customers * getCustomer();
+	Customer * getCustomer();
 	string toString();
-	~Reservations();
+	~Reservation();
 };
 

@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\FileHandlers">
+      <UniqueIdentifier>{5696b8c7-f4c7-4b00-bc43-1dbf59d30ea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FileHandlers">
+      <UniqueIdentifier>{fefea4cf-84e4-406e-a541-73d2306cb96e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -21,34 +27,40 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Flights.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Planes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Customers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Reservations.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="FileHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Airports.h">
+    <ClInclude Include="Plane.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FileHandlerC.h">
+    <ClInclude Include="Reservation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FileHandlerD.h">
+    <ClInclude Include="Flight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Customer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FileHandlerA.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\FileHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHandlerC.h">
+      <Filter>Header Files\FileHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHandlerD.h">
+      <Filter>Header Files\FileHandlers</Filter>
     </ClInclude>
     <ClInclude Include="FileHandlerF.h">
+      <Filter>Header Files\FileHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHandlerP.h">
+      <Filter>Header Files\FileHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHandlerR.h">
+      <Filter>Header Files\FileHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Airport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -59,34 +71,40 @@
     <ClCompile Include="FlightBookingSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Flights.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Planes.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Customers.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Reservations.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="FileHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Airports.cpp">
+    <ClCompile Include="Plane.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FileHandlerC.cpp">
+    <ClCompile Include="Reservation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FileHandlerD.cpp">
+    <ClCompile Include="Flight.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Customer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandlerP.cpp">
+      <Filter>Source Files\FileHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandlerR.cpp">
+      <Filter>Source Files\FileHandlers</Filter>
     </ClCompile>
     <ClCompile Include="FileHandlerA.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\FileHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandlerC.cpp">
+      <Filter>Source Files\FileHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandlerD.cpp">
+      <Filter>Source Files\FileHandlers</Filter>
     </ClCompile>
     <ClCompile Include="FileHandlerF.cpp">
+      <Filter>Source Files\FileHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Airport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

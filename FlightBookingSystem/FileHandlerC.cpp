@@ -15,7 +15,7 @@ void FileHandlerC::createCustomers()
 	vector<string> customerFile = readFile("../Customers.txt");
 	for (unsigned int i = 0; i < customerFile.size(); i++)
 	{
-		customers.push_back(Customers(stoi(customerFile[i + 1]), customerFile[i + 2], customerFile[i + 3], customerFile[i + 4]));
+		customers.push_back(Customer(stoi(customerFile[i + 1]), customerFile[i + 2], customerFile[i + 3], customerFile[i + 4]));
 		i += 4;
 	}
 }

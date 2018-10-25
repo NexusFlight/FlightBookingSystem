@@ -1,8 +1,8 @@
 #include "stdafx.h"
-#include "Flights.h"
+#include "Flight.h"
 
 
-Flights::Flights(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable)
+Flight::Flight(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable)
 {
 	_flightCode = flightCode;
 	_dateOfDeparture = dateOfDeparture;
@@ -15,27 +15,27 @@ Flights::Flights(int flightCode, string dateOfDeparture, float expcTimeOfDepart,
 	_seatsAvailable = seatsAvailable;
 }
 
-void Flights::assignPlane(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats)
+void Flight::assignPlane(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats)
 {
-	plane = new Planes(planeType, planeMake, planeModel, planeCallSign, totalSeats);
+	plane = new Plane(planeType, planeMake, planeModel, planeCallSign, totalSeats);
 }
 
-void Flights::assignReservation(string dateOfBooking)
+void Flight::assignReservation(string dateOfBooking)
 {
-	_reservations.push_back(Reservations(_flightCode, dateOfBooking, _dateOfDeparture));
+	_reservations.push_back(Reservation(_flightCode, dateOfBooking, _dateOfDeparture));
 }
 
-void Flights::assignCustomerToReservation(int customerCode, string customerName, string customerAddress, string customerPhone)
+void Flight::assignCustomerToReservation(int customerCode, string customerName, string customerAddress, string customerPhone)
 {
 	_reservations[_reservations.size() - 1].assignCustomer(customerCode, customerName, customerAddress, customerPhone);
 }
 
-Flights::~Flights()
+Flight::~Flight()
 {
 }
 
 
-vector<string> Flights::toString()
+vector<string> Flight::toString()
 {
 	vector<string> value;
 	value.push_back(to_string(_flightCode));
@@ -50,12 +50,12 @@ vector<string> Flights::toString()
 	return value;
 }
 
-Planes* Flights::getPlane()
+Plane* Flight::getPlane()
 {
 	return plane;
 }
 
-vector<Reservations> Flights::getReservations()
+vector<Reservation> Flight::getReservations()
 {
 	return _reservations;
 }

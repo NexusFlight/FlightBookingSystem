@@ -1,6 +1,6 @@
 #pragma once
 #include "FileHandlerD.h"
-#include "Customers.h"
+#include "Customer.h"
 #include <map>
 class FileHandlerC : public FileHandlerD
 {
@@ -17,7 +17,7 @@ class FileHandlerC : public FileHandlerD
 
 
 	void createCustomers();
-	vector<Customers> customers;
+	vector<Customer> customers;
 
 
 public:

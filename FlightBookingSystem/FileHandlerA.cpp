@@ -10,10 +10,9 @@ FileHandlerA::FileHandlerA()
 void FileHandlerA::createAirports()
 {
 	vector<string> fileContents = readFile("../Airports.txt");
-	vector<Airports> airports;
 	for (int i = 0; i < fileContents.size(); i++)
 	{
-		airports.push_back(Airports(fileContents[i + 1]));
+		airports.push_back(Airport(fileContents[i + 1]));
 		i++;
 	}
 }

@@ -1,8 +1,8 @@
 #include "stdafx.h"
-#include "Planes.h"
+#include "Plane.h"
 
 
-Planes::Planes(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats)
+Plane::Plane(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats)
 {
 	_planeType = planeType;
 	_planeMake = planeMake;
@@ -11,7 +11,7 @@ Planes::Planes(string planeType, string planeMake, string planeModel, string pla
 	_totalSeats = totalSeats;
 }
 
-vector<string> Planes::toString()
+vector<string> Plane::toString()
 {
 	vector<string> value;
 	value.push_back(_planeType);
@@ -23,6 +23,6 @@ vector<string> Planes::toString()
 }
 
 
-Planes::~Planes()
+Plane::~Plane()
 {
 }

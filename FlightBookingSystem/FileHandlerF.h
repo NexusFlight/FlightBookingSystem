@@ -1,9 +1,10 @@
 #pragma once
 #include "FileHandlerD.h"
-#include "Flights.h"
+#include "Flight.h"
 class FileHandlerF :
 	public FileHandlerD
 {
+	vector<Flight> flights;
 	void createFlights();
 public:
 	FileHandlerF();

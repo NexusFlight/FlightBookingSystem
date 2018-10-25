@@ -1,12 +1,12 @@
 #pragma once
 #include <string>
 #include <fstream>
-#include "Airports.h"
-#include "Planes.h"
+#include "Airport.h"
+#include "Plane.h"
 using namespace std;
 class FileHandler
 {
-	vector<Airports> _airports;
+	vector<Airport> _airports;
 	void importMainFile();
 	void extractInformation(string fileContent, int fileLength);
 	void generateAirports(string line);
@@ -17,8 +17,8 @@ class FileHandler
 	string sanitizeString(string line);
 public:
 	FileHandler();
-	vector<Airports> getAirports();
-	void writeToFile(vector<Airports> airports);
+	vector<Airport> getAirports();
+	void writeToFile(vector<Airport> airports);
 	~FileHandler();
 };
 

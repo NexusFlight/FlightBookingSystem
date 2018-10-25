@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "FileHandler.h"
 #include <iostream>
-#include "Airports.h"
+#include "Airport.h"
 #include <vector>
 #include <algorithm>
 
@@ -14,12 +14,12 @@ FileHandler::FileHandler()
 	importMainFile();
 }
 
-vector<Airports> FileHandler::getAirports()
+vector<Airport> FileHandler::getAirports()
 {
 	return _airports;
 }
 
-void FileHandler::writeToFile(vector<Airports> airports)
+void FileHandler::writeToFile(vector<Airport> airports)
 {
 	ofstream file("../BookingFile.txt");
 	for  (int i = 0;  i < airports.size();  i++)
@@ -28,7 +28,7 @@ void FileHandler::writeToFile(vector<Airports> airports)
 		file << '\n';
 		file << airports[i].getName();
 		file << '\n';
-		vector<Flights> flights = airports[i].getFlights();
+		vector<Flight> flights = airports[i].getFlights();
 		for (int j = 0; j < flights.size(); j++)
 		{
 			vector<string> flightDetails = flights[j].toString();
@@ -47,7 +47,7 @@ void FileHandler::writeToFile(vector<Airports> airports)
 				file << '\t'+planeDetails[k];
 				file << '\n';
 			}
-			vector<Reservations> reservations = flights[j].getReservations();
+			vector<Reservation> reservations = flights[j].getReservations();
 			for (int k = 0; k < reservations.size(); k++)
 			{
 				string reservationDetails = reservations[k].toString();
@@ -112,7 +112,7 @@ void FileHandler::importMainFile()
 
 void FileHandler::generateAirports(string line)
 {
-	_airports.push_back(Airports(line));
+	_airports.push_back(Airport(line));
 }
 
 void FileHandler::assignFlightToAirport(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable) {

@@ -1,8 +1,8 @@
 #include "stdafx.h"
-#include "Customers.h"
+#include "Customer.h"
 
 
-Customers::Customers(int customerCode, string customerName, string customerAddress, string customerPhone)
+Customer::Customer(int customerCode, string customerName, string customerAddress, string customerPhone)
 {
 	_customerCode = customerCode;
 	_customerName = customerName;
@@ -10,7 +10,7 @@ Customers::Customers(int customerCode, string customerName, string customerAddre
 	_customerPhone = customerPhone;
 }
 
-vector<string> Customers::toString() 
+vector<string> Customer::toString() 
 {
 	vector<string> value;
 	value.push_back(to_string(_customerCode));
@@ -20,6 +20,6 @@ vector<string> Customers::toString()
 	return value;
 }
 
-Customers::~Customers()
+Customer::~Customer()
 {
 }

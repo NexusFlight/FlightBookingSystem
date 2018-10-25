@@ -1,0 +1,30 @@
+[Flight Details]
+FlightCode:111
+DateOfTravel:12/12/18
+ExpectedTimeOfDeparture:18.000000
+ExpectedTimeOfArrival:19.000000
+OriginatingTerminal:Amsterdam
+DestinationTerminal:Edinburgh
+Connections:NA
+SeatsBooked:50
+AvailableSeats:2
+[Flight Details]
+FlightCode:112
+DateOfTravel:12/12/18
+ExpectedTimeOfDeparture:19.000000
+ExpectedTimeOfArrival:20.000000
+OriginatingTerminal:Amsterdam
+DestinationTerminal:Edinburgh
+Connections:NA
+SeatsBooked:48
+AvailableSeats:4
+[Flight Details]
+FlightCode:113
+DateOfTravel:15/12/18
+ExpectedTimeOfDeparture:14.000000
+ExpectedTimeOfArrival:17.000000
+OriginatingTerminal:Amsterdam
+DestinationTerminal:Edinburgh
+Connections:NA
+SeatsBooked:48
+AvailableSeats:4

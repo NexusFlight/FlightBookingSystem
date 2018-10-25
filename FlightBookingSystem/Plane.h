@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-class Planes
+class Plane
 {
 	string _planeType;
 	string _planeMake;
@@ -11,9 +11,9 @@ class Planes
 	string _planeCallSign;
 	int _totalSeats;
 public:
-	Planes();
-	Planes(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats);
+	Plane();
+	Plane(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats);
 	vector<string> toString();
-	~Planes();
+	~Plane();
 };
 

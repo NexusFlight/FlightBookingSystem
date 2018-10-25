@@ -1,0 +1,18 @@
+[Plane Details]
+PlaneType:Turbo Prop
+PlaneMake:QuinJet
+PlaneModel:441
+CallSign:M3KSA
+TotalSeats:52
+[Plane Details]
+PlaneType:Super Heavy
+PlaneMake:Boeing
+PlaneModel:881
+CallSign:TS553
+TotalSeats:52
+[Plane Details]
+PlaneType:Heavy
+PlaneMake:Rolls Royce
+PlaneModel:921
+CallSign:TA512
+TotalSeats:102
