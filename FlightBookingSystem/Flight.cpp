@@ -2,7 +2,7 @@
 #include "Flight.h"
 
 
-Flight::Flight(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable)
+Flight::Flight(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable,string callSign)
 {
 	_flightCode = flightCode;
 	_dateOfDeparture = dateOfDeparture;
@@ -13,27 +13,29 @@ Flight::Flight(int flightCode, string dateOfDeparture, float expcTimeOfDepart, f
 	_connections = connections;
 	_seatsBooked = seatsBooked;
 	_seatsAvailable = seatsAvailable;
+	_callSign = callSign;
 }
 
-void Flight::assignPlane(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats)
+int Flight::getFlightCode()
 {
-	plane = new Plane(planeType, planeMake, planeModel, planeCallSign, totalSeats);
+	return _flightCode;
 }
-
-void Flight::assignReservation(string dateOfBooking)
+string Flight::getDepatureAirport()
 {
-	_reservations.push_back(Reservation(_flightCode, dateOfBooking, _dateOfDeparture));
+	return _departureAirport;
 }
-
-void Flight::assignCustomerToReservation(int customerCode, string customerName, string customerAddress, string customerPhone)
+string Flight::getDestinationAirport()
 {
-	_reservations[_reservations.size() - 1].assignCustomer(customerCode, customerName, customerAddress, customerPhone);
+	return _destinationAirport;
 }
-
-Flight::~Flight()
+string Flight::getConnections()
 {
+	return _connections;
 }
-
+string Flight::getCallsign()
+{
+	return _callSign;
+}
 
 vector<string> Flight::toString()
 {
@@ -50,15 +52,35 @@ vector<string> Flight::toString()
 	return value;
 }
 
-Plane* Flight::getPlane()
+Flight::~Flight()
 {
-	return plane;
 }
 
-vector<Reservation> Flight::getReservations()
-{
-	return _reservations;
-}
+//Plane* Flight::getPlane()
+//{
+//	return plane;
+//}
+//
+//vector<Reservation> Flight::getReservations()
+//{
+//	return _reservations;
+//}
+//void Flight::assignPlane(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats)
+//{
+//	plane = new Plane(planeType, planeMake, planeModel, planeCallSign, totalSeats);
+//}
+//
+//void Flight::assignReservation(string dateOfBooking)
+//{
+//	_reservations.push_back(Reservation(_flightCode, dateOfBooking, _dateOfDeparture));
+//}
+//
+//void Flight::assignCustomerToReservation(int customerCode, string customerName, string customerAddress, string customerPhone)
+//{
+//	_reservations[_reservations.size() - 1].assignCustomer(customerCode, customerName, customerAddress, customerPhone);
+//}
+//
+
 
 //int Flights::getFlightCode()
 //{

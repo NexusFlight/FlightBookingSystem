@@ -20,6 +20,10 @@ void FileHandlerC::createCustomers()
 	}
 }
 
+vector<Customer> FileHandlerC::getCustomers()
+{
+	return customers;
+}
 
 FileHandlerC::~FileHandlerC()
 {

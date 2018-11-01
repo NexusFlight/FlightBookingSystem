@@ -8,6 +8,7 @@ DestinationTerminal:Edinburgh
 Connections:NA
 SeatsBooked:50
 AvailableSeats:2
+CallSign:M3KSA
 [Flight Details]
 FlightCode:112
 DateOfTravel:12/12/18
@@ -18,6 +19,7 @@ DestinationTerminal:Edinburgh
 Connections:NA
 SeatsBooked:48
 AvailableSeats:4
+CallSign:TS553
 [Flight Details]
 FlightCode:113
 DateOfTravel:15/12/18
@@ -28,3 +30,15 @@ DestinationTerminal:Edinburgh
 Connections:NA
 SeatsBooked:48
 AvailableSeats:4
+CallSign:M3KSA
+[Flight Details]
+FlightCode:113
+DateOfTravel:15/12/18
+ExpectedTimeOfDeparture:13.000000
+ExpectedTimeOfArrival:16.000000
+OriginatingTerminal:Amsterdam
+DestinationTerminal:Edinburgh
+Connections:NA
+SeatsBooked:48
+AvailableSeats:4
+CallSign:TS553

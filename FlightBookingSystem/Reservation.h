@@ -10,13 +10,13 @@ class Reservation
 	int _flightCode;
 	string _dateOfBooking;
 	string _dateOfDeparture;
-	Customer *customer;
+	int _customerCode;
 public:
 	Reservation();
-	Reservation(int flightCode, string dateOfBooking, string dateOfDeparture);
-	void assignCustomer(int customerCode, string customerName, string customerAddress, string customerPhone);
-	Customer * getCustomer();
+	Reservation(int flightCode, string dateOfBooking, string dateOfDeparture, int customerCode);
 	string toString();
 	~Reservation();
+	//void assignCustomer(int customerCode, string customerName, string customerAddress, string customerPhone);
+	//Customer * getCustomer();
 };
 

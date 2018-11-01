@@ -8,6 +8,7 @@ class FileHandlerF :
 	void createFlights();
 public:
 	FileHandlerF();
+	vector<Flight> getFlights();
 	~FileHandlerF();
 };
 

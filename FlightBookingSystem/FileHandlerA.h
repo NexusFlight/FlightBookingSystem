@@ -7,6 +7,7 @@ class FileHandlerA :
 	vector<Airport> airports;
 	void createAirports();
 public:
+	vector<Airport> getAirports();
 	FileHandlerA();
 	~FileHandlerA();
 };

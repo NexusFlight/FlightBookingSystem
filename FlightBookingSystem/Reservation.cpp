@@ -2,21 +2,12 @@
 #include "Reservation.h"
 
 
-Reservation::Reservation(int flightCode, string dateOfBooking, string dateOfDeparture)
+Reservation::Reservation(int flightCode, string dateOfBooking, string dateOfDeparture,int customerCode)
 {
 	_flightCode = flightCode;
 	_dateOfBooking = dateOfBooking;
 	_dateOfDeparture = dateOfDeparture;
-}
-
-void Reservation::assignCustomer(int customerCode, string customerName, string customerAddress, string customerPhone)
-{
-	customer = new Customer(customerCode, customerName, customerAddress, customerPhone);
-}
-
-Customer* Reservation::getCustomer()
-{
-	return customer;
+	_customerCode = customerCode;
 }
 
 string Reservation::toString()
@@ -27,3 +18,13 @@ string Reservation::toString()
 Reservation::~Reservation()
 {
 }
+
+//void Reservation::assignCustomer(int customerCode, string customerName, string customerAddress, string customerPhone)
+//{
+//	customer = new Customer(customerCode, customerName, customerAddress, customerPhone);
+//}
+//
+//Customer* Reservation::getCustomer()
+//{
+//	return customer;
+//}

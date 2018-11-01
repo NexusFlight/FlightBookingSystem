@@ -1,7 +1,6 @@
 #pragma once
 #include "FileHandlerD.h"
 #include "Customer.h"
-#include <map>
 class FileHandlerC : public FileHandlerD
 {
 	//this is part of the veratile code commented out in the cpp file
@@ -15,12 +14,10 @@ class FileHandlerC : public FileHandlerD
 	//};
 	//string getLineIdentifier(string line);
 
-
 	void createCustomers();
 	vector<Customer> customers;
-
-
 public:
+	vector<Customer> getCustomers();
 	FileHandlerC();
 	~FileHandlerC();
 };

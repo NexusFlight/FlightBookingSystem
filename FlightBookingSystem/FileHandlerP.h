@@ -5,9 +5,10 @@ class FileHandlerP :
 	public FileHandlerD
 {
 	vector<Plane> planes;
+	void createPlanes();
 public:
 	FileHandlerP();
-	void createPlanes();
+	vector<Plane> getPlanes();
 	~FileHandlerP();
 };
 

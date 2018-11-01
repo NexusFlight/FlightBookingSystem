@@ -18,6 +18,11 @@ void FileHandlerP::createPlanes()
 	}
 }
 
+vector<Plane> FileHandlerP::getPlanes()
+{
+	return planes;
+}
+
 
 FileHandlerP::~FileHandlerP()
 {

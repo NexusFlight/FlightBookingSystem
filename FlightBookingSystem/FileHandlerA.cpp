@@ -17,6 +17,13 @@ void FileHandlerA::createAirports()
 	}
 }
 
+
+vector<Airport> FileHandlerA::getAirports()
+{
+	return airports;
+}
+
+
 FileHandlerA::~FileHandlerA()
 {
 }

@@ -5,9 +5,10 @@ class FileHandlerR :
 	public FileHandlerD
 {
 	vector<Reservation> reservations;
+	void createReservations();
 public:
 	FileHandlerR();
-	void createReservations();
+	vector<Reservation> getReservations();
 	~FileHandlerR();
 };
 

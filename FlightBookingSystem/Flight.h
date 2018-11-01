@@ -16,16 +16,26 @@ class Flight
 	string _connections;
 	int _seatsBooked;
 	int _seatsAvailable;
-	Plane *plane;
-	vector<Reservation> _reservations;
+	string _callSign;
+	//vector<Reservation> _reservations;
 
 public:
 	Flight();
-	Flight(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable);
-	void assignPlane(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats);
-	void assignReservation(string dateOfBooking);
-	void assignCustomerToReservation(int customerCode, string customerName, string customerAddress, string customerPhone);
+	Flight(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable,string callCode);
+	//void assignPlane(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats);
+	//void assignReservation(string dateOfBooking);
+	//void assignCustomerToReservation(int customerCode, string customerName, string customerAddress, string customerPhone);
 	~Flight();
+	int getFlightCode();
+	string getDateOfDeparture();
+	string getExpectTimeOfDepart();
+	string getExpectTimeOfArrival();
+	string getDepatureAirport();
+	string getDestinationAirport();
+	string getConnections();
+	int getSeatsBooked();
+	int getSeatsAvailable();
+	string getCallsign();
 	vector<string> toString();
 	//int getFlightCode();
 	//string getDateOfDepature();

@@ -13,5 +13,6 @@ protected:
 	vector<string> readFile(string filename);
 	void writeFile(vector<string> contents, string filename);
 	string sanitiseString(string input);
+	int getRelation(string input);
 };
 
