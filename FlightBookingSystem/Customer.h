@@ -12,6 +12,7 @@ public:
 	Customer();
 	Customer(int customerCode, string customerName, string customerAddress, string customerPhone);
 	vector<string> toString();
+	int getCustomerCode();
 	~Customer();
 };
 

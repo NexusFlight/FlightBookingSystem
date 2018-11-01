@@ -14,6 +14,7 @@ public:
 	Plane();
 	Plane(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats);
 	vector<string> toString();
+	string getCallSign();
 	~Plane();
 };
 

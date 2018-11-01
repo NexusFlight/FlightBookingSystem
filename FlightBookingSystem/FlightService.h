@@ -16,9 +16,16 @@ class FlightService
 	vector<Plane> _planes;
 	vector<Reservation> _reservations;
 	vector<Customer> _customers;
-	Flight getReservationFromCustomer(Customer customer);
+	vector<Reservation> getReservationsFromCustomer(Customer customer);
+	Plane getPlaneFromFlight(Flight flight);
+	Flight getFlightsFromReservation(Reservation reservation);
+	Airport getOriginatingAirportFromFlight(Flight flight);
+	Airport getDestinationAirportFromFlight(Flight flight);
 public:
 	FlightService();
+
+
+	
 	~FlightService();
 };
 

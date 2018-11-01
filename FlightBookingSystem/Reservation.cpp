@@ -15,6 +15,16 @@ string Reservation::toString()
 	return _dateOfBooking;
 }
 
+int Reservation::getCustomerCode()
+{
+	return _customerCode;
+}
+
+int Reservation::getFlightCode()
+{
+	return _flightCode;
+}
+
 Reservation::~Reservation()
 {
 }

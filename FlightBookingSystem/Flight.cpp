@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "Flight.h"
 
+Flight::Flight()
+{
+}
 
 Flight::Flight(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable,string callSign)
 {

@@ -4,6 +4,10 @@
 
 using namespace std;
 
+Airport::Airport()
+{
+}
+
 Airport::Airport(string name)
 {
 	_name = name;

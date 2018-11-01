@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "Plane.h"
 
+Plane::Plane()
+{
+}
 
 Plane::Plane(string planeType, string planeMake, string planeModel, string planeCallSign, int totalSeats)
 {
@@ -22,6 +25,10 @@ vector<string> Plane::toString()
 	return value;
 }
 
+string Plane::getCallSign()
+{
+	return _planeCallSign;
+}
 
 Plane::~Plane()
 {

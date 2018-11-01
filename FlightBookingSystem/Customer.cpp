@@ -20,6 +20,11 @@ vector<string> Customer::toString()
 	return value;
 }
 
+int Customer::getCustomerCode()
+{
+	return _customerCode;
+}
+
 Customer::~Customer()
 {
 }
