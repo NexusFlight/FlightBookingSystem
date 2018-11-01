@@ -8,6 +8,7 @@ class FileHandlerA :
 	void createAirports();
 public:
 	vector<Airport> getAirports();
+	void writeChanges(vector<Airport> airports);
 	FileHandlerA();
 	~FileHandlerA();
 };

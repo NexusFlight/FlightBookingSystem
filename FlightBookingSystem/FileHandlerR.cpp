@@ -23,6 +23,20 @@ vector<Reservation> FileHandlerR::getReservations()
 	return reservations;
 }
 
+void FileHandlerR::writeChanges(vector<Reservation> reservations)
+{
+	vector<string> output;
+	for (int i = 0; i < reservations.size(); i++)
+	{
+		vector<string> reservation = reservations[i].toString();
+		for (int j = 0; j < reservation.size(); j++)
+		{
+			output.push_back(reservation[j]);
+		}
+	}
+	writeFile(output, "../Reservations.txt");
+}
+
 FileHandlerR::~FileHandlerR()
 {
 }

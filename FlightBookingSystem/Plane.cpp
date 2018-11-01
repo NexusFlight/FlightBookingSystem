@@ -17,11 +17,12 @@ Plane::Plane(string planeType, string planeMake, string planeModel, string plane
 vector<string> Plane::toString()
 {
 	vector<string> value;
-	value.push_back(_planeType);
-	value.push_back(_planeMake);
-	value.push_back(_planeModel);
-	value.push_back(_planeCallSign);
-	value.push_back(to_string(_totalSeats));
+	value.push_back("[Plane Details]");
+	value.push_back("PlaneType:" + _planeType);
+	value.push_back("PlaneMake:" + _planeMake);
+	value.push_back("PlaneModel:" + _planeModel);
+	value.push_back("CallSign:" + _planeCallSign);
+	value.push_back("TotalSeats:"+to_string(_totalSeats));
 	return value;
 }
 

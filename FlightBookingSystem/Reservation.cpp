@@ -10,9 +10,15 @@ Reservation::Reservation(int flightCode, string dateOfBooking, string dateOfDepa
 	_customerCode = customerCode;
 }
 
-string Reservation::toString()
+vector<string> Reservation::toString()
 {
-	return _dateOfBooking;
+	vector<string> value;
+	value.push_back("[Reservation Details]");
+	value.push_back("FlightCode:"+to_string(_flightCode));
+	value.push_back("DateOfBooking:"+_dateOfBooking);
+	value.push_back("DateOfTravel:"+_dateOfDeparture);
+	value.push_back("CustomerCode:"+to_string(_customerCode));
+	return value;
 }
 
 int Reservation::getCustomerCode()

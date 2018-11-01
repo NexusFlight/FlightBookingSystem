@@ -18,7 +18,14 @@ string Airport::getName()
 {
 	return _name;
 }
-//
+
+vector<string> Airport::toString()
+{
+	vector<string> value;
+	value.push_back("[Airport Name]");
+	value.push_back("AirportName:"+_name);
+	return value;
+}
 
 Airport::~Airport()
 {

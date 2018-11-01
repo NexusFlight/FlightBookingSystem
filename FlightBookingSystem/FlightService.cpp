@@ -4,24 +4,39 @@
 
 FlightService::FlightService()
 {
-	airports = FileHandlerA();
-	customers = FileHandlerC();
-	flights	= FileHandlerF();
-	reservations = FileHandlerR();
-	planes = FileHandlerP();
+	fAirports = FileHandlerA();
+	fCustomers = FileHandlerC();
+	fFlights	= FileHandlerF();
+	fReservations = FileHandlerR();
+	fPlanes = FileHandlerP();
 	
-	_airports = airports.getAirports();
-	_customers = customers.getCustomers();
-	_flights = flights.getFlights();
-	_reservations = reservations.getReservations();
-	_planes = planes.getPlanes();
+	_airports = fAirports.getAirports();
+	_customers = fCustomers.getCustomers();
+	_flights = fFlights.getFlights();
+	_reservations = fReservations.getReservations();
+	_planes = fPlanes.getPlanes();
 
-	vector<Reservation> customerReservations = getReservationsFromCustomer(_customers[1]);
+	fAirports.writeChanges(_airports);
+	fCustomers.writeChanges(_customers);
+	fFlights.writeChanges(_flights);
+	fReservations.writeChanges(_reservations);
+	fPlanes.writeChanges(_planes);
+
+	/*vector<Reservation> customerReservations = getReservationsFromCustomer(_customers[1]);
 	Flight flightForReservation = getFlightsFromReservation(customerReservations[0]);
 	Plane planeForFlight = getPlaneFromFlight(flightForReservation);
 	Airport destinationFlight = getDestinationAirportFromFlight(flightForReservation);
-	Airport originatingFlight = getOriginatingAirportFromFlight(flightForReservation);
+	Airport originatingFlight = getOriginatingAirportFromFlight(flightForReservation);*/
 }
+
+
+
+
+
+
+
+
+
 
 Airport FlightService::getOriginatingAirportFromFlight(Flight flight)
 {

@@ -17,6 +17,7 @@ public:
 	//void assignReservationToFlight(string dateOfBooking);
 	//void assignCustomerToReservation(int customerCode, string customerName, string customerAddress, string customerPhone);
 	string getName();
+	vector<string> toString();
 	//vector<Flight> getFlights();
 	~Airport();
 };

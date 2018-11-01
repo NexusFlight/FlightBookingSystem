@@ -23,6 +23,19 @@ vector<Plane> FileHandlerP::getPlanes()
 	return planes;
 }
 
+void FileHandlerP::writeChanges(vector<Plane> planes)
+{
+	vector<string> output;
+	for (int i = 0; i < planes.size(); i++)
+	{
+		vector<string> plane = planes[i].toString();
+		for (int j = 0; j < plane.size(); j++)
+		{
+			output.push_back(plane[j]);
+		}
+	}
+	writeFile(output, "../Planes.txt");
+}
 
 FileHandlerP::~FileHandlerP()
 {

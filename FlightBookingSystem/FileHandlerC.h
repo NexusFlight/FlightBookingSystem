@@ -18,6 +18,7 @@ class FileHandlerC : public FileHandlerD
 	vector<Customer> customers;
 public:
 	vector<Customer> getCustomers();
+	void writeChanges(vector<Customer> customers);
 	FileHandlerC();
 	~FileHandlerC();
 };

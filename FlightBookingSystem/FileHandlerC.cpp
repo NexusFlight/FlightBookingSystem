@@ -25,6 +25,20 @@ vector<Customer> FileHandlerC::getCustomers()
 	return customers;
 }
 
+void FileHandlerC::writeChanges(vector<Customer> customers)
+{
+	vector<string> output;
+	for (int i = 0; i < customers.size(); i++)
+	{
+		vector<string> customer = customers[i].toString();
+		for (int j = 0; j < customer.size(); j++)
+		{
+			output.push_back(customer[j]);
+		}
+	}
+	writeFile(output, "../Customers.txt");
+}
+
 FileHandlerC::~FileHandlerC()
 {
 }

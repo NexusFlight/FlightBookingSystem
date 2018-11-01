@@ -14,7 +14,7 @@ class Reservation
 public:
 	Reservation();
 	Reservation(int flightCode, string dateOfBooking, string dateOfDeparture, int customerCode);
-	string toString();
+	vector<string> toString();
 	int getCustomerCode();
 	int getFlightCode();
 	~Reservation();

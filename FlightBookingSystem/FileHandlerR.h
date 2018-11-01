@@ -9,6 +9,7 @@ class FileHandlerR :
 public:
 	FileHandlerR();
 	vector<Reservation> getReservations();
+	void writeChanges(vector<Reservation> reservations);
 	~FileHandlerR();
 };
 

@@ -43,15 +43,17 @@ string Flight::getCallsign()
 vector<string> Flight::toString()
 {
 	vector<string> value;
-	value.push_back(to_string(_flightCode));
-	value.push_back(_dateOfDeparture);
-	value.push_back(to_string(_expectTimeOfDepart));
-	value.push_back(to_string(_expectTimeofArrival));
-	value.push_back(_departureAirport);
-	value.push_back(_destinationAirport);
-	value.push_back(_connections);
-	value.push_back(to_string(_seatsBooked));
-	value.push_back(to_string(_seatsAvailable));
+	value.push_back("[Flight Details]");
+	value.push_back("FlightCode:"+to_string(_flightCode));
+	value.push_back("DateOfTravel:"+_dateOfDeparture);
+	value.push_back("ExpectedTimeOfDeparture:"+to_string(_expectTimeOfDepart));
+	value.push_back("ExpectedTimeOfArrival:"+to_string(_expectTimeofArrival));
+	value.push_back("OriginatingTerminal:"+_departureAirport);
+	value.push_back("DestinationTerminal:"+_destinationAirport);
+	value.push_back("Connections:"+_connections);
+	value.push_back("SeatsBooked:"+to_string(_seatsBooked));
+	value.push_back("AvailableSeats:"+	to_string(_seatsAvailable));
+	value.push_back("CallSign:"+_callSign);
 	return value;
 }
 

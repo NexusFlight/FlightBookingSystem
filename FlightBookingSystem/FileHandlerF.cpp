@@ -23,6 +23,20 @@ vector<Flight> FileHandlerF::getFlights()
 	return flights;
 }
 
+void FileHandlerF::writeChanges(vector<Flight> flights)
+{
+	vector<string> output;
+	for (int i = 0; i < flights.size(); i++)
+	{
+		vector<string> flight = flights[i].toString();
+		for (int j = 0; j < flight.size(); j++)
+		{
+			output.push_back(flight[j]);
+		}
+	}
+	writeFile(output, "../Flights.txt");
+}
+
 FileHandlerF::~FileHandlerF()
 {
 }

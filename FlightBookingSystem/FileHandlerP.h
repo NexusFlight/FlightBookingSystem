@@ -9,6 +9,7 @@ class FileHandlerP :
 public:
 	FileHandlerP();
 	vector<Plane> getPlanes();
+	void writeChanges(vector<Plane> planes);
 	~FileHandlerP();
 };
 

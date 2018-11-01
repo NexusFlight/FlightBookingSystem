@@ -27,7 +27,14 @@ void FileHandlerD::writeFile(vector<string> contents, string filename)
 
 	for (unsigned int i = 0; i < contents.size(); i++)
 	{
-		file << contents[i] << '\n';
+		
+		if (i == contents.size() - 1)
+		{
+			file << contents[i];
+		}
+		else {
+			file << contents[i] << '\n';
+		}
 	}
 
 }
