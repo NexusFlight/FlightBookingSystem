@@ -4,6 +4,7 @@
 #include "FileHandlerF.h"
 #include "FileHandlerP.h"
 #include "FileHandlerR.h"`
+#include <ctype.h>
 class FlightService
 {
 	FileHandlerA fAirports;
@@ -15,17 +16,25 @@ class FlightService
 	vector<Flight> _flights;
 	vector<Plane> _planes;
 	vector<Reservation> _reservations;
-	vector<Customer> _customers;
-	vector<Reservation> getReservationsFromCustomer(Customer customer);
-	Plane getPlaneFromFlight(Flight flight);
-	Flight getFlightsFromReservation(Reservation reservation);
-	Airport getOriginatingAirportFromFlight(Flight flight);
-	Airport getDestinationAirportFromFlight(Flight flight);
+	vector<Customer> _customers;	
+	string toLower(string input);
 public:
 	FlightService();
 
+	void addCustomer(string name, string address, string phoneNum);
 
+	void addReservation(int flightCode, string dateOfBooking, string dateOfDeparture, int customerCode);
+
+	void addFlight(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable, string callCode);
+
+
+	Customer getCustomerByCode(int customerCode);
+	vector<Reservation> getReservationsFromCustomer(Customer customer);
+	Flight getFlightsFromReservation(Reservation reservation);
+	Plane getPlaneFromFlight(Flight flight);
+	Airport getOriginatingAirportFromFlight(Flight flight);
+	Airport getDestinationAirportFromFlight(Flight flight);
 	
 	~FlightService();
 };
-
+//Customer getCustomerFromName(string name);

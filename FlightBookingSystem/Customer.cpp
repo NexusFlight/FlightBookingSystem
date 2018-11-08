@@ -1,6 +1,10 @@
 #include "stdafx.h"
 #include "Customer.h"
 
+Customer::Customer()
+{
+	_customerCode = -1;
+}
 
 Customer::Customer(int customerCode, string customerName, string customerAddress, string customerPhone)
 {
@@ -8,6 +12,11 @@ Customer::Customer(int customerCode, string customerName, string customerAddress
 	_customerName = customerName;
 	_customerAddress = customerAddress;
 	_customerPhone = customerPhone;
+}
+
+string Customer::geCustomerName() 
+{
+	return _customerName;
 }
 
 vector<string> Customer::toString() 

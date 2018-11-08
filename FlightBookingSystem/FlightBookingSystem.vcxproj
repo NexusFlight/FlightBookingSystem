@@ -157,6 +157,7 @@
     <ClInclude Include="FileHandlerR.h" />
     <ClInclude Include="Flight.h" />
     <ClInclude Include="FlightService.h" />
+    <ClInclude Include="MenuHandler.h" />
     <ClInclude Include="Plane.h" />
     <ClInclude Include="Reservation.h" />
     <ClInclude Include="stdafx.h" />
@@ -174,6 +175,7 @@
     <ClCompile Include="FlightBookingSystem.cpp" />
     <ClCompile Include="Flight.cpp" />
     <ClCompile Include="FlightService.cpp" />
+    <ClCompile Include="MenuHandler.cpp" />
     <ClCompile Include="Plane.cpp" />
     <ClCompile Include="Reservation.cpp" />
     <ClCompile Include="stdafx.cpp">

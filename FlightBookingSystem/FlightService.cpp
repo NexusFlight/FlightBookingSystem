@@ -16,26 +16,56 @@ FlightService::FlightService()
 	_reservations = fReservations.getReservations();
 	_planes = fPlanes.getPlanes();
 
-	fAirports.writeChanges(_airports);
-	fCustomers.writeChanges(_customers);
-	fFlights.writeChanges(_flights);
-	fReservations.writeChanges(_reservations);
-	fPlanes.writeChanges(_planes);
-
-	/*vector<Reservation> customerReservations = getReservationsFromCustomer(_customers[1]);
-	Flight flightForReservation = getFlightsFromReservation(customerReservations[0]);
-	Plane planeForFlight = getPlaneFromFlight(flightForReservation);
-	Airport destinationFlight = getDestinationAirportFromFlight(flightForReservation);
-	Airport originatingFlight = getOriginatingAirportFromFlight(flightForReservation);*/
 }
 
+void FlightService::addCustomer(string name, string address, string phoneNum)
+{
+	_customers.push_back(Customer(_customers.size()+1, name, address, phoneNum));
+}
 
+void FlightService::addReservation(int flightCode, string dateOfBooking, string dateOfDeparture, int customerCode)
+{
+	_reservations.push_back(Reservation(flightCode, dateOfBooking, dateOfDeparture, customerCode));
+}
 
+void FlightService::addFlight(int flightCode, string dateOfDeparture, float expcTimeOfDepart, float expectTimeofArrival, string departureAirport, string destinationAirport, string connections, int seatsBooked, int seatsAvailable, string callCode)
+{
+	_flights.push_back(Flight(flightCode, dateOfDeparture, expcTimeOfDepart, expectTimeofArrival, departureAirport, destinationAirport, connections, seatsBooked, seatsAvailable, callCode));
+}
 
+string FlightService::toLower(string input)
+{
+	string output = "";
+	for (int i = 0; i < input.length(); i++)
+	{
+		output += tolower(input[i]);
+	}
+	return output;
+}
 
+Customer FlightService::getCustomerByCode(int customerCode)
+{
+	for (int i = 0; i < _customers.size(); i++)
+	{
+		if (_customers[i].getCustomerCode() == customerCode)
+		{
+			return _customers[i];
+		}
+	}
+	return Customer();
+}
 
-
-
+//this is commented out as a customers name may not be unique will use customer code for lookup
+//Customer FlightService::getCustomerFromName(string name)
+//{
+//	for (int i = 0; i < _customers.size(); i++)
+//	{
+//		if (toLower(_customers[i].geCustomerName()) ==  toLower(name))
+//		{
+//			return _customers[i];
+//		}
+//	}
+//}
 
 
 Airport FlightService::getOriginatingAirportFromFlight(Flight flight)

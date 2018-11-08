@@ -2,18 +2,16 @@
 #include <string>
 #include <vector>
 using namespace std;
-class Customer
+class Customers
 {
 	int _customerCode;
 	string _customerName;
 	string _customerAddress;
 	string _customerPhone;
 public:
-	Customer();
-	Customer(int customerCode, string customerName, string customerAddress, string customerPhone);
-	string geCustomerName();
+	Customers();
+	Customers(int customerCode, string customerName, string customerAddress, string customerPhone);
 	vector<string> toString();
-	int getCustomerCode();
-	~Customer();
+	~Customers();
 };
 
